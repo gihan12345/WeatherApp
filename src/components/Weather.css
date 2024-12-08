@@ -1,0 +1,143 @@
+.headline {
+    font-size: 48px; /* Adjust size as needed */
+    color: #ffffff; /* White color for high contrast */
+    text-align: center;
+    margin: 20px 0; /* Space around the headline */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger black shadow for better contrast */
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 20px; /* Space between search bar and weather box */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input {
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light border for subtle visibility */
+    outline: none;
+    border-radius: 5px; /* Curved corners for rectangular input */
+    padding-left: 15px; /* Adjust padding for a better look */
+    color: #333; /* Dark color for text to ensure readability */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 300px; /* Set width for consistent size */
+}
+
+.search-bar img {
+    width: 40px; /* Adjust size as needed */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 50%; /* Keep rounded corners for the icon */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.weather {
+    position: relative; /* Establish positioning context */
+    padding: 40px;
+    border-radius: 20px; /* Curved corners */
+    background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+    backdrop-filter: blur(10px); /* Glass effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(7, 7, 7, 0.973), 0 0 5px rgb(255, 255, 255); /* Glowing border effect */
+    width: 100%; /* Ensure full width */
+    max-width: 600px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.location {
+    position: absolute; /* Absolute positioning within the weather box */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    color: #ffffff; /* Adjust color for readability */
+    font-size: 16px; /* Adjust size for readability */
+}
+
+.current-date {
+    position: absolute; /* Absolute positioning within the weather box */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    color: #ffffff; /* Adjust color for readability */
+    font-size: 16px; /* Adjust size for readability */
+}
+
+.temperature {
+    color: #ffffff; /* Adjust color for readability */
+    font-size: 40px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
+.temperature .temp {
+    display: flex;
+    gap: 10px; /* Space between Celsius and Fahrenheit */
+}
+
+.weather-type {
+    font-size: 20px; /* Adjust size for readability */
+    color: #ffffff; /* Adjust color for readability */
+    margin-top: 10px; /* Space above the weather type */
+}
+
+.weather-details {
+    width: 100%;
+    margin-top: 20px;
+    color: #ffffff; /* Adjust color for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-data, .sunrise-sunset {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px; /* Space between sections */
+}
+
+.weather-data .col, .sunrise-sunset .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    font-size: 18px;
+    margin: 0 50px; /* Space between columns */
+}
+
+.weather-data .col p, .sunrise-sunset .col p {
+    margin: 0;
+    font-size: 20px;
+    color: black; /* Set count color to black */
+}
+
+.weather-data .col span, .sunrise-sunset .col span {
+    font-size: 12px;
+}
+
+.line-separator {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ffffff; /* Color of the line */
+    margin: 20px 0; /* Space around the line */
+}
+
+.sun-icon {
+    width: 24px; /* Adjust the size as needed */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.weather-icon {
+    margin-top: 20px; /* Space above the weather icon */
+}
